@@ -32,9 +32,5 @@ public class ClientController {
     public void addClient(@RequestBody Client client){
         clientRepository.save(client);
     }
-
-    @PostMapping
-    public void deleteAll(){
-        clientRepository.deleteAll();
-    }
+    
 }

@@ -32,5 +32,16 @@ public class ClientController {
     public void addClient(@RequestBody Client client){
         clientRepository.save(client);
     }
-    
+
+    @DeleteMapping("/{id}")
+    public void deleteClient(@PathVariable("id") Long id){
+        clientRepository.deleteById(id);
+    }
+
+    @DeleteMapping
+    public void deleteAll(){
+        clientRepository.deleteAll();
+    }
+    // Inserir @PutMapping
+
 }

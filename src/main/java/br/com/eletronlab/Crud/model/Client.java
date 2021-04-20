@@ -15,6 +15,10 @@ public class Client {
     private int age;
     private String city;
 
+    public long getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }
@@ -38,5 +42,6 @@ public class Client {
     public void setCity(String city) {
         this.city = city;
     }
+
 }
 
